@@ -9,5 +9,18 @@
         android:id="@+id/start2"
         android:name="com.example.myapplication.start"
         android:label="fragment_start"
-        tools:layout="@layout/fragment_start" />
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_start2_to_zoeken"
+            app:destination="@id/zoeken" />
+    </fragment>
+    <fragment
+        android:id="@+id/zoeken"
+        android:name="com.example.myapplication.zoeken"
+        android:label="fragment_zoeken"
+        tools:layout="@layout/fragment_zoeken" >
+        <action
+            android:id="@+id/action_zoeken_to_start2"
+            app:destination="@id/start2" />
+    </fragment>
 </navigation>
